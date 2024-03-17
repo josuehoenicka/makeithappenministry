@@ -1,0 +1,12 @@
+$primaryColor: #ffffff !default;
+$primaryTextColor: #495057 !default;
+$topbarItemColor: #495057 !default;
+$topbarItemHoverColor: #7D8792 !default;
+$topbarItemBadgeColor: #ef6262 !default;
+$topbarItemBadgeTextColor: #ffffff !default;
+$topbarSearchBorderColor: #ced6e4 !default;
+$topbarSearchPlaceholderColor: #bac6d9 !default;
+$topbarSearchInputTextColor: $primaryTextColor !default;
+$topbarBorderColor: #e1e6ef !default;
+
+@import '../../sass/layout/_layout';

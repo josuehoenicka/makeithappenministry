@@ -1,0 +1,28 @@
+/* Utils */
+.clearfix:after {
+    content:" ";
+    display:block;
+    clear:both;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 1em;
+    margin-bottom: 2rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .card-header {
+        @include flex();
+        @include flex-align-center();
+        @include flex-justify-between();
+    }
+
+    .card-subtitle {
+        color: #6c757d;
+        font-weight: 600;
+        margin: -1rem 0 1rem 0;
+    }
+}

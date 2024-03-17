@@ -1,0 +1,66 @@
+.wrapper {
+  &.layout-light {
+    .sidebar {
+      @include linear-gradient(#ffffff, #fafaff);
+      border-right: 1px solid $lightMenuBorderColor;
+
+      .profile {
+        > a {
+          color: $lightMenuitemColor;
+
+          &:hover {
+            color: $lightMenuitemHoverColor;
+          }
+        }
+
+        > ul {
+          background-color: $lightMenuitemActiveBgColor;
+        }
+      }
+
+      ul {
+        li {
+          > a {
+            color: $lightMenuitemColor;
+            border-top: 1px solid $lightMenuitemBorderColor;
+
+            .menu-badge {
+              color: $lightMenuitemBadgeTextColor;
+              background-color: $lightMenuitemBadgeBgColor;
+            }
+
+            &:hover {
+              color: $lightMenuitemHoverColor;
+
+              .menu-badge {
+                color: #ffffff;//???
+              }
+            }
+          }
+
+          &.active-menuitem {
+            > a {
+              background-color: $lightMenuitemActiveBgColor;
+              color: $lightMenuitemActiveColor;
+            }
+
+            > ul {
+              background-color: $lightMenuitemActiveBgColor;
+            }
+          }
+
+          &:last-child {
+            > a {
+              border-bottom: 1px solid $lightMenuitemBorderColor;
+            }
+          }
+        }
+
+        .menuitem-badge {
+          background-color: $lightMenuitemBadgeBgColor;
+          color: $lightMenuitemBadgeTextColor;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,261 @@
+/* Dashboard */
+.dashboard {
+    .card {
+        margin-top: 0px;
+    }
+
+    .summary {
+        height: 75px;
+
+        .title {
+            font-size: 20px;
+        }
+
+        .detail {
+            color: #a4a4a4;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .count {
+            color: #ffffff;
+            font-size: 24px;
+            @include border-radius(4px);
+
+            &.visitors {
+                background-color: #20d077;
+            }
+
+            &.purchases {
+                background-color: #f9c851;
+            }
+
+            &.revenue {
+                background-color: #007be5;
+            }
+        }
+    }
+
+    .task-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            padding: 8px 4px;
+            border-bottom: 1px solid $dividerColor;
+        }
+
+        .p-checkbox {
+            vertical-align: middle;
+            margin-right: .5rem;
+        }
+
+        .task-name {
+            vertical-align: middle;
+        }
+
+        .p-button {
+            width: 50px;
+            float: right;
+            padding: 2px 0;
+
+            .p-button-text {
+                padding: .1em;
+            }
+        }
+    }
+
+    .overview-box {
+        h5 {
+            margin:0;
+            color: #495057;
+        }
+
+        p {
+            color: #495057;
+        }
+
+        i {
+            color: #495057;
+        }
+
+        .logo {
+            padding: .5rem;
+            border-radius: 8px;
+            font-size: 2.5rem;
+        }
+
+        &.paypal {
+            .p-progressbar {
+                background: #d1e8fa;
+
+                .p-progressbar-value{
+                    background: #253b80;
+                }
+            }
+
+            .logo {
+                color: #253b80;
+                background-color: #d1e8fa;
+            }
+        }
+
+        &.amazon {
+            .p-progressbar {
+                background: #ffedd1;
+
+                .p-progressbar-value{
+                    background: #ff9900;
+                }
+            }
+
+            .logo {
+                color: #ff9900;
+                background-color: #ffedd1;
+            }
+        }
+
+        &.youtube {
+            .p-progressbar {
+                background: #ffe0e0;
+
+                .p-progressbar-value{
+                    background: #ff0000;
+                }
+            }
+
+            .logo {
+                color: #ff0000;
+                background-color: #ffe0e0;
+            }
+        }
+
+        &.apple {
+            .p-progressbar {
+                background: #e5e5e5;
+
+                .p-progressbar-value{
+                    background: #000000;
+                }
+            }
+
+            .logo {
+                color: #000000;
+                background-color: #e5e5e5;
+            }
+        }
+    }
+
+    .highlight-box {
+        height: 100px;
+
+        .initials {
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+            height: 100%;
+            font-size: 54px;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .card {
+            color: #a4a4a4;
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+            height: 100%;
+
+            .count {
+                font-size: 36px;
+                display: block;
+                margin-top: 15px;
+            }
+
+            .highlight-box-icon {
+                margin-right: .25em;
+            }
+        }
+    }
+
+    .activity-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            border-bottom: 1px solid $dividerColor;
+            padding: 16px 8px;
+
+            .count {
+                font-size: 20px;
+                color: #ffffff;
+                background-color: #007be5;
+                font-weight: 700;
+                padding: .25em .5em;
+                display: inline-block;
+                @include border-radius(4px);
+            }
+
+            .p-progressbar {
+                height: .5em;
+            }
+
+            .col-6:first-child {
+                font-size: 18px;
+                padding-left: 0;
+            }
+
+            .col-6:last-child {
+                text-align: right;
+                color: #a4a4a4;
+            }
+        }
+    }
+
+    .contacts {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            border-bottom: 1px solid $dividerColor;
+
+            a {
+                padding: 9px;
+                width: 100%;
+                box-sizing: border-box;
+                text-decoration: none;
+                position: relative;
+                display: block;
+                @include border-radius(2px);
+                @include transition(background-color .2s);
+
+                .name {
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                    font-size: 18px;
+                }
+
+                .email {
+                    position: absolute;
+                    right: 10px;
+                    top: 30px;
+                    font-size: 14px;
+                    color: #a4a4a4;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: #eeeeee;
+                }
+            }
+
+            &:last-child {
+                border: 0;
+            }
+        }
+    }
+}

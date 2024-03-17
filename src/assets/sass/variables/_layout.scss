@@ -1,0 +1,78 @@
+/* General */
+$fontSize: 14px !default;
+$submenuFontSize: 13px !default;
+$dividerColor: #e3e3e3 !default;
+$tabletBreakpoint:991px !default;
+$phoneBreakpoint:576px !default;
+
+//dark menu - default
+$menuBgColor: #3b3e47 !default;
+$menuitemColor: #ffffff !default;
+$menuitemHoverColor: #2399e5 !default;
+$menuitemActiveColor: #2399e5 !default;
+$menuitemActiveBgColor: #2e3035 !default;
+$menuitemBorderColor: #4e5159 !default;
+$menuitemBadgeBgColor: #007be5 !default;
+$menuitemBadgeTextColor: #00448f !default;
+$menuBorderColor: #4d5058 !default;
+
+//light menu
+$lightMenuBgColor: #3b3e47 !default;
+$lightMenuitemColor: #495057 !default;
+$lightMenuitemHoverColor: #2399e5 !default;
+$lightMenuitemActiveColor: #2399e5 !default;
+$lightMenuitemActiveBgColor: #edf0f5 !default;
+$lightMenuitemBorderColor: #e1e6ef !default;
+$lightMenuitemBadgeBgColor: #007be5 !default;
+$lightMenuitemBadgeTextColor: #ffffff !default;
+$lightMenuBorderColor: #e1e6ef !default;
+
+// === Button Colors === //
+/* GreenButton */
+$greenButton: #1f9e53 !default;
+$greenButtonBorder: #107533 !default;
+$greenButtonHover: #2eb971 !default;
+$greenButtonActive: #178544 !default;
+
+/* YellowButton */
+$yellowButton: #eed511 !default;
+$yellowButtonBorder: #cdb80d !default;
+$yellowButtonHover: #f8e653 !default;
+$yellowButtonActive: #d4b301 !default;
+
+/* RedButton */
+$redButton: #b8312e !default;
+$redButtonBorder: #9c1627 !default;
+$redButtonHover: #d2524f !default;
+$redButtonActive: #9c1627 !default;
+
+/* greyButton */
+$greyButton: #ECEFF1 !default;
+$greyButtonBorder: #CCCFD2 !default;
+$greyButtonText: #525252 !default;
+$greyButtonHover: #F5FBFF !default;
+$greyButtonActive: #CCCFD2 !default;
+
+/* BlackButton */
+$blackButton: #353535 !default;
+$blackButtonBorder: #212121 !default;
+$blackButtonHover: #4a4a4a !default;
+$blackButtonActive: #212121 !default;
+
+/* BlueButton */
+$blueButton: #2c78c7 !default;
+$blueButtonBorder: #1a51b0 !default;
+$blueButtonHover: #409cdc !default;
+$blueButtonActive: #1a51b0 !default;
+
+/* AquaButton */
+$aquaButton: #0084b4 !default;
+$aquaButtonBorder: #087298 !default;
+$aquaButtonHover: #03A8E4 !default;
+$aquaButtonActive: #087298 !default;
+
+/* NavyButton */
+$navyButton: #1f3b59 !default;
+$navyButtonBorder: #21374f !default;
+$navyButtonHover: #3C6592 !default;
+$navyButtonActive: #21374f !default;
