@@ -1,0 +1,289 @@
+/****************************************  GENERAL (DESKTOP)  ******************************************/
+.dexcarriados-mobile-btn {
+  display: none;
+  border: none;
+  outline: none;
+  font-family: 'Raleway', cursive;
+  padding: .5em 2em;
+  font-size: 1.25em;
+  border-radius: 2em;
+  margin-top: 1em;
+  opacity: 0.85;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.carousel-title-scroll {
+  display: none;
+}
+
+body {
+  padding-top: 5em;
+  height: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: transparent;
+}
+.carousel-image-container {
+  height: 70vh;
+}
+.carousel-image {
+  width: 40vw;
+  height: 100%;
+  border-radius: 1em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-position: center;
+  object-fit: cover;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.5);
+}
+
+.carousel-title {
+  font-family: 'Inter', cursive;
+  font-size: 2em;
+  opacity: 0.9;
+  color: #000000;
+  margin: 0.5em 0;
+  font-style: italic;
+  text-shadow: 1px 1px 2px #adadad;
+}
+
+.carousel-image:not(:first-child) {
+  transform: translateX(100%);
+}
+
+.dexcarriados {
+  overflow: hidden;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.dexcarriados-answer {
+  font-family: 'Raleway', cursive;
+  color: #ff1818;
+  font-size: 2.1em;
+  text-shadow: 1px 1px 2px #ff1818;
+  font-weight: bold;
+}
+
+.dexcarriados-ul {
+  padding-top: 1em;
+}
+
+.dexcarriados-item{
+  font-family: 'Raleway', cursive;
+  font-size: 1.5em;
+  padding: 0.25em 0;
+  color: #000000;
+  font-weight: bold;
+}
+
+.dexcarriados-btn {
+  background-color: var(--red);
+  color: var(--letter);
+  text-shadow: 0.5px 0.5px 2px #000000;
+  box-shadow: 0 0 .13em 0 #00000080;
+  padding: .5em 2.2em;
+  margin: 0.55em 1em;
+  font-size: 1.7em;
+  border-radius: 2em;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.5s;
+  border: none;
+  outline: none;
+}
+
+.dexcarriados-btn:hover {
+  opacity: 1;
+}
+
+.dexcarriados-span {
+  font-family: 'Raleway', cursive;
+  font-size: 1em;
+  padding: 0.25em 0;
+  color: #ff1818;
+  text-shadow: 1px 1px 2px #ff1818;
+  font-weight: bold;
+}
+
+.dexcarriados-span-active {
+  font-family: 'Inter', cursive;
+  font-size: .9em;
+}
+
+.carousel-span {
+  font-size: .9em;
+  font-family: 'Inter', cursive;
+  font-style: normal;
+  color: #000000;
+}
+
+/*************************************  NOTEBOOK/TABLET STYLES  ****************************************/
+
+@media (min-width: 40em) and (max-width: 70em){
+  body {
+    width: 100vw;
+    height: 100%;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .carousel {
+    height: 100vh;
+    justify-content: flex-start;
+  }
+  .carousel-title {
+    font-size: 2em;
+    color: #000000;
+    text-align: center;
+    text-shadow: 0.5px 0.5px 1.5px #000000;
+  }
+  .carousel-span {
+    font-size: 1em;
+    font-family: 'Inter', cursive;
+    font-style: normal;
+    color: #000000;
+  }
+  .carousel-image-container {
+    width: 50vw;
+    height: 55vh;
+  }
+  .carousel-image {
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-title-scroll {
+    width: 100%;
+    padding-top: 1em;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+  }
+  .dexcarriados {
+    padding: 1em 0 1.5em 0;
+    height: 100%;
+    justify-content: flex-start;
+    border-top: .3em #ff1818 solid;
+    border-bottom: .3em #ff1818 solid;
+    justify-content: flex-start;
+  }
+  .dexcarriados-answer {
+    font-size: 2.2em;
+    padding: .1em 0;
+    text-align: center;
+  }
+  .dexcarriados-ul {
+    padding-top: .2em;
+  }
+  .dexcarriados-item{
+    font-size: 1.5em;
+    padding: .7em 0 .5em 0.5em;
+    text-align: justify-all;
+  }
+  .dexcarriados-btn {
+    padding: .5em 2em;
+    font-size: 1.6em;
+    text-align: justify-all;
+  }
+}
+
+/*****************************************  MOBILE STYLES  ********************************************/
+
+@media (min-width: 15em) and (max-width: 39.9em){
+  body {
+    height: 100%;
+    padding-top: 4em;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .carousel {
+    height: 100vh;
+    justify-content: center;
+  }
+  .carousel-title {
+    font-family: 'Inter', cursive;
+    font-size: 1.5em;
+    color: #000000;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000000;
+  }
+  .carousel-span {
+    font-size: 1em;
+    font-family: 'Inter', cursive;
+    font-style: normal;
+    color: #000000;
+    text-shadow: 1px 1px 2px #000000;
+  }
+  .carousel-image {
+    width: 90vw;
+    height: 50vh;
+  }
+  .carousel-title-scroll {
+    width: 100%;
+    padding-top: 1em;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+  }
+  .dexcarriados-mobile-btn {
+    display: block;
+    border: none;
+    outline: none;
+    font-family: 'Raleway', cursive;
+    padding: .5em 2em;
+    font-size: 1.2em;
+    border-radius: 2em;
+    margin-top: 1em;
+    opacity: 0.85;
+    cursor: pointer;
+    transition: 0.7s;
+  }
+  .dexcarriados {
+    padding: 1em 0 1.5em 0;
+    height: 100%;
+    justify-content: flex-start;
+    border-top: .3em #ff1818 solid;
+    border-bottom: .3em #ff1818 solid;
+  }
+  .dexcarriados-answer {
+    font-size: 1.5em;
+    padding: 0.25em 0;
+    text-align: justify-all;
+  }
+  .dexcarriados-ul {
+    padding-left: 2em;
+    padding-top: .7em;
+  }
+  .dexcarriados-item{
+    font-size: 1.3em;
+    padding: .5em 0 1em 0.5em;
+    text-align: justify-all;
+  }
+  .dexcarriados-btn {
+    padding: .5em 2em;
+    font-size: 1.3em;
+    text-align: justify-all;
+  }
+}
