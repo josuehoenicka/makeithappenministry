@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>¡Bienvenido al Juego Bíblico!</h1>
+  <div *ngIf="!gameStarted">
+    <button (click)="startGame()">Comenzar Juego</button>
+  </div>
+  <div *ngIf="gameStarted">
+    <h2>Pregunta {{ currentQuestionIndex + 1 }} de {{ questions.length }}</h2>
+    <p>{{ currentQuestion.text }}</p>
+    @for (option of currentQuestion.options; track option; let i = $index) {
+      <button (click)="checkAnswer(option)">{{ option }}</button>
+    }
+    <div *ngIf="showResult">
+      <p [ngClass]="{ 'correct': isCorrect, 'incorrect': !isCorrect }">{{ resultMessage }}</p>
+      <button (click)="nextQuestion()">Siguiente Pregunta</button>
+    </div>
+  </div>
+</div>
