@@ -1,3 +1,50 @@
 @import "../node_modules/primeng/resources/primeng.min.css";
 @import "../node_modules/primeflex/primeflex.css";
 @import "../node_modules/primeicons/primeicons.css";
+@import url("https://fonts.googleapis.com/css2?family=Explora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --bg: #feeeee;
+  --bg_dark: #2f2f2f;
+  --letter: #fefefe;
+  --letter_dark: #2f2f2f;
+  --red: #f02a2a;
+  --purple: #a176bc;
+  --green: #09843c;
+  --yellow: #ffe970;
+  --orange: #ffba61;
+  --blue: #0752fe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Alumni Sans Pinstripe";
+  text-decoration: none;
+  user-select: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0.77em;
+  height: 100%;
+  background-color: var(--bg);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--bg_dark);
+  border-radius: 1em;
+}
+
+body::-webkit-scrollbar-thumb:horizontal {
+  display: none;
+}

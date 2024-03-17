@@ -70,7 +70,11 @@ export class DexcarriadosComponent {
     },
   ];
 
-  constructor(private router: Router, private http: HttpClient) { }
+  constructor(private router: Router, private http: HttpClient) {
+    // setInterval(() => {
+    //   this.nextImage();
+    // }, 4000);
+  }
 
   images: string[] = [
     '../../../../assets/slider/1.jpg',
@@ -80,9 +84,9 @@ export class DexcarriadosComponent {
   currentIndex = 0;
 
   ngOnInit(): void {
-    setInterval(() => {
-      this.nextImage();
-    }, 4000);
+    // setInterval(() => {
+    //   this.nextImage();
+    // }, 4000);
   }
 
   selectPerson(opcion: any, index: number) {

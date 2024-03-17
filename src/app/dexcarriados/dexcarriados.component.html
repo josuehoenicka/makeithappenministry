@@ -1,5 +1,5 @@
-<body>
-  <div>
+<div class="carousel-container">
+  <div class="carousel-subcontainer">
     <div class="carousel">
       <h2 class="carousel-title">
         "Ni yo te condeno..." <span class="carousel-span">Juan 8:11</span>
@@ -43,101 +43,92 @@
       </button>
     </div>
   </div>
-</body>
+</div>
 <div class="form-container">
-  <div>
-    <form (ngSubmit)="enviarFormulario()" method="POST">
-      <div class="form-top">
-        <div class="info-container">
-          <div class="input-container">
-            <input
-              class="info-input"
-              type="text"
-              id="nombre"
-              [(ngModel)]="nombre"
-              name="nombre"
-              placeholder="¿Cómo le gustaría ser llamado?"
-              autocomplete="off"
-              [ngClass]="{ empty: !nombre, valid: nombre }"
-            />
-            <input
-              class="info-input info-input-active"
-              type="text"
-              id="contacto"
-              [(ngModel)]="contacto"
-              name="telefono"
-              placeholder="Contacto (Email, WhastApp, Telegram, etc)"
-              autocomplete="off"
-              [ngClass]="{ empty: !contacto, valid: contacto }"
-            />
-          </div>
-          <div class="message-container">
-            <textarea
-              class="info-textarea"
-              id="mensaje"
-              [(ngModel)]="mensaje"
-              name="mensaje"
-              placeholder="Escribe un mensaje (Opcional)"
-            >
-            </textarea>
-          </div>
+  <form (ngSubmit)="enviarFormulario()" method="POST">
+    <div class="form-top">
+      <div class="info-container">
+        <div class="input-container">
+          <input
+            class="info-input"
+            type="text"
+            id="nombre"
+            [(ngModel)]="nombre"
+            name="nombre"
+            placeholder="¿Cómo le gustaría ser llamado?"
+            autocomplete="off"
+            [ngClass]="{ empty: !nombre, valid: nombre }"
+          />
+          <input
+            class="info-input info-input-active"
+            type="text"
+            id="contacto"
+            [(ngModel)]="contacto"
+            name="telefono"
+            placeholder="Contacto (Email, WhastApp, Telegram, etc)"
+            autocomplete="off"
+            [ngClass]="{ empty: !contacto, valid: contacto }"
+          />
         </div>
-        <div class="option-choose-container">
-          <div class="option-container">
-            @for (opcion of opciones; track opcion; let i = $index) {
-            <label
-              [ngClass]="{
-                'selected-person': indiceSeleccionado == i,
-                'background-rosa':
-                  indiceSeleccionado == i && opcion.genre == 'w',
-                'background-azul':
-                  indiceSeleccionado == i && opcion.genre == 'm'
-              }"
-              for="{{ opcion.name }}"
-              class="option-info-container"
-            >
-              <img class="option-image" [src]="opcion.image" alt="" />
-              <div class="option-bio-container">
-                <input
-                  (click)="selectPerson(opcion, i)"
-                  class="option-checkbox"
-                  type="radio"
-                  style="display: none"
-                  name="opciones"
-                  [(ngModel)]="select"
-                  [value]="opcion.name"
-                  [id]="opcion.name"
-                />
-                <label class="option-name">{{ opcion.name }}</label>
-                <img
-                  class="option-nationality"
-                  [src]="opcion.nationality"
-                  alt="consejeros dexcarriados anonymous make it happen ministry"
-                />
-              </div>
-            </label>
-            }
-          </div>
+        <div class="message-container">
+          <textarea
+            class="info-textarea"
+            id="mensaje"
+            [(ngModel)]="mensaje"
+            name="mensaje"
+            placeholder="Escribe un mensaje (Opcional)"
+          >
+          </textarea>
         </div>
       </div>
-      <div class="form-bottom">
-        <button
-          class="btn-form btn-clear"
-          type="reset"
-          (click)="limpiarFormulario()"
-        >
-          Limpiar formulario
-        </button>
-        <a
-          class="btn-custom"
-          href="mailto:amplioperdon@gmail.com"
-          target="_blank"
-          >Mensaje personalizado</a
-        >
-        <button class="btn-form btn-send" type="submit">
-          Enviar formulario
-        </button>
+      <div class="option-choose-container">
+        <div class="option-container">
+          @for (opcion of opciones; track opcion; let i = $index) {
+          <label
+            [ngClass]="{
+              'selected-person': indiceSeleccionado == i,
+              'background-rosa': indiceSeleccionado == i && opcion.genre == 'w',
+              'background-azul': indiceSeleccionado == i && opcion.genre == 'm'
+            }"
+            for="{{ opcion.name }}"
+            class="option-info-container"
+          >
+            <img class="option-image" [src]="opcion.image" alt="" />
+            <div class="option-bio-container">
+              <input
+                (click)="selectPerson(opcion, i)"
+                class="option-checkbox"
+                type="radio"
+                style="display: none"
+                name="opciones"
+                [(ngModel)]="select"
+                [value]="opcion.name"
+                [id]="opcion.name"
+              />
+              <label class="option-name">{{ opcion.name }}</label>
+              <img
+                class="option-nationality"
+                [src]="opcion.nationality"
+                alt="consejeros dexcarriados anonymous make it happen ministry"
+              />
+            </div>
+          </label>
+          }
+        </div>
       </div>
-    </form>
-  </div>
+    </div>
+    <div class="form-bottom">
+      <button
+        class="btn-form btn-clear"
+        type="reset"
+        (click)="limpiarFormulario()"
+      >
+        Limpiar formulario
+      </button>
+      <a class="btn-custom" href="mailto:amplioperdon@gmail.com" target="_blank"
+        >Mensaje personalizado</a
+      >
+      <button class="btn-form btn-send" type="submit">Enviar formulario</button>
+    </div>
+  </form>
 </div>
