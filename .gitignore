@@ -45,4 +45,4 @@ Thumbs.db
 .angular
 
 # Custom
-/src/app/common
+/src/app/common/
