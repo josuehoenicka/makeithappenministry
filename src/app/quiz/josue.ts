@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   selector: 'quiz-character-josue',
   standalone: true,
   imports: [NgIf, NgClass],
-  templateUrl: '../common/quiz/quiz.html',
-  styleUrl: '../common/quiz/quiz.css'
+  templateUrl: '../common/components/quiz/quiz.html',
+  styleUrl: '../common/components/quiz/quiz.css'
 })
 export class QuizCharacterJosue {
   gameStarted: boolean = false;

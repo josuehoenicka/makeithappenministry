@@ -43,3 +43,6 @@ Thumbs.db
 
 # Angular
 .angular
+
+# Custom
+/src/app/common
