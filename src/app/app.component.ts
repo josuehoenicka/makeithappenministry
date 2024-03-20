@@ -2,12 +2,11 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { PrimeNGConfig } from 'primeng/api';
-import { AppMenuComponent } from './common/components/sidenav/omega-template/app.menu.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HttpClientModule, AppMenuComponent],
+  imports: [RouterOutlet, HttpClientModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
