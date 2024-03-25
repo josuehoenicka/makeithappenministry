@@ -1,17 +1,21 @@
-<button (click)="toggleSidenav()">
-  <mat-icon *ngIf="sidenavHidden">chevron_right</mat-icon>
-  <mat-icon *ngIf="!sidenavHidden">chevron_left</mat-icon>
-</button>
+
 
 <div class="sidenav" [ngClass]="{ 'sidenav-hidden': sidenavHidden }">
-  <ng-container *ngFor="let route of sidenavRoutes">
-    <a *ngIf="!route.children" (click)="toggleContent(route.title)" [class.active]="isRouteActive(route.title)">
+  <ng-container *ngFor="let route of sidenavRoutes; let i = index">
+    <a
+      *ngIf="!route.children"
+      (click)="toggleContent(route.title)"
+      [class.active]="isRouteActive(route.title)"
+    >
       {{ route.title }}
     </a>
-    <a *ngIf="route.children" (click)="toggleContent(route.title)" [class.active]="isRouteActive(route.title)">
+    <a
+      *ngIf="route.children"
+      (click)="toggleContent(route.title)"
+      [class.active]="isRouteActive(route.title)"
+    >
       {{ route.title }}
-      <mat-icon *ngIf="isRouteActive(route.title) && showContent">expand_more</mat-icon>
-      <mat-icon *ngIf="isRouteActive(route.title) && !showContent">chevron_right</mat-icon>
+      <mat-icon>expand_more</mat-icon>
     </a>
     <ul *ngIf="route.children && isRouteActive(route.title) && showContent">
       <li *ngFor="let child of route.children">
@@ -19,7 +23,4 @@
       </li>
     </ul>
   </ng-container>
-</div>
-<div class="main-content">
-  <router-outlet></router-outlet>
 </div>

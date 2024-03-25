@@ -32,26 +32,23 @@ export class SidenavComponent {
     },
     {
       title: 'Proyectos',
-      children: ['Dexcarriados Anonymous', 'Quiz MIH'],
+      children: ['Dexcarriados Anonymous', 'Quizmih'],
+      showContent: false,
     },
     {
       title: 'Estudios',
-      children: ['Pastores', 'Adoradores', 'Jóvenes'],
+      children: ['Pastores', 'Jóvenes'],
+      showContent: false,
     },
     {
       title: 'Equipo',
-      children: [
-        'Fundadores',
-        'Pastores',
-        'Maestros',
-        'Radio',
-        'Marketing',
-        'Soporte Técnico',
-      ],
+      children: ['Colaboradores', 'Iglesias', 'Tecnología'],
+      showContent: false,
     },
     {
       title: 'Más información',
       children: ['¿Quiénes somos?', 'FAQs', 'Contáctanos'],
+      showContent: false,
     },
   ];
 
