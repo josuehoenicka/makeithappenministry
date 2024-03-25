@@ -55,6 +55,10 @@ button {
   z-index: 1000;
 }
 
+.toggle-button mat-icon {
+  font-size: 2.5em;
+}
+
 .sidenav-hidden {
   display: none;
 }
