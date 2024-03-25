@@ -48,3 +48,14 @@ button {
   vertical-align: middle;
 }
 
+.toggle-button {
+  position: absolute;
+  top: 20px;
+  left: 17vw;
+  z-index: 1000;
+}
+
+.sidenav-hidden {
+  display: none;
+}
+

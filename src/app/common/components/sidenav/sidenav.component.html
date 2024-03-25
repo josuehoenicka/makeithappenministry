@@ -1,4 +1,6 @@
-
+<button (click)="toggleSidenav()" class="toggle-button" [style.left]="sidenavHidden ? '2vw' : '17vw'">
+  <mat-icon>{{ sidenavHidden ? 'menu' : 'close' }}</mat-icon>
+</button>
 
 <div class="sidenav" [ngClass]="{ 'sidenav-hidden': sidenavHidden }">
   <ng-container *ngFor="let route of sidenavRoutes; let i = index">
