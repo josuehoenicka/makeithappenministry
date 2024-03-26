@@ -32,7 +32,7 @@ export class SidenavComponent {
     },
     {
       title: 'Proyectos',
-      children: ['Dexcarriados Anonymous', 'Quizmih'],
+      children: ['Dexcarriados Anonymous', 'Quiz MIH !'],
       showContent: false,
     },
     {
@@ -41,8 +41,8 @@ export class SidenavComponent {
       showContent: false,
     },
     {
-      title: 'Equipo',
-      children: ['Colaboradores', 'Iglesias', 'Tecnología'],
+      title: 'Team',
+      children: ['Colaboradores', 'Iglesias', 'Equipo IT'],
       showContent: false,
     },
     {
