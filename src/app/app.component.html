@@ -1,1 +1,5 @@
-<app-sidenav></app-sidenav>
+<app-sidenav (routeChange)="onRouteChange($event)"></app-sidenav>
+
+<div style="width: 100vw; display: flex; justify-content: flex-end;">
+  {{currentView}}
+</div>

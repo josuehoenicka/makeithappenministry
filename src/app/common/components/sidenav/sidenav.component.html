@@ -1,31 +1,29 @@
-<button (click)="toggleSidenav()" class="toggle-button" [style.left]="sidenavHidden ? '2vw' : '17vw'">
-  <mat-icon>{{ sidenavHidden ? 'menu' : 'close' }}</mat-icon>
-</button>
-
-<div class="sidenav" [ngClass]="{ 'sidenav-hidden': sidenavHidden }">
+<div class="sidenav">
   <div class="logo-container">
-    <img src="../../../../assets/icons/mih.png" alt="" class="sidenav-logo">
+    <img src="../../../../assets/icons/mih.png" alt="" class="sidenav-logo" />
   </div>
   <ng-container *ngFor="let route of sidenavRoutes; let i = index">
     <a
       *ngIf="!route.children"
-      (click)="toggleContent(route.title)"
+      (click)="selectedRoute(route)"
       [class.active]="isRouteActive(route.title)"
     >
       {{ route.title }}
     </a>
     <a
       *ngIf="route.children"
-      (click)="toggleContent(route.title)"
+      (click)="selectedRoute(route)"
       [class.active]="isRouteActive(route.title)"
     >
       {{ route.title }}
       <mat-icon>expand_more</mat-icon>
     </a>
     <ul *ngIf="route.children && isRouteActive(route.title) && showContent">
-      <li *ngFor="let child of route.children">
-        <a>{{ child }}</a>
+      @for (child of route.children; track child; let i = $index) {
+      <li>
+        <a (click)="selectedRoute(route, i)">{{ child }}</a>
       </li>
+      }
     </ul>
   </ng-container>
 </div>

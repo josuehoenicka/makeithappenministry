@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, output } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
@@ -19,6 +19,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   styleUrl: './sidenav.component.css',
 })
 export class SidenavComponent {
+  routeChange = output<any>();
   sidenavHidden: boolean = false;
   activeRoute: string | null = null;
   showContent: boolean = false;
@@ -58,12 +59,22 @@ export class SidenavComponent {
     this.sidenavHidden = !this.sidenavHidden;
   }
 
-  toggleContent(routeTitle: string) {
-    if (this.activeRoute === routeTitle) {
-      this.showContent = !this.showContent;
-    } else {
-      this.activeRoute = routeTitle;
+  selectedRoute(route: any, i?: any) {
+    if (i !== undefined) {
+      this.activeRoute = route.children[i];
+      this.routeChange.emit(this.activeRoute);
+      return;
+    }
+    if (route?.children !== undefined) {
+      if (this.activeRoute === route.title) {
+        this.showContent = !this.showContent;
+        return;
+      }
       this.showContent = true;
+      this.activeRoute = route.title;
+    } else {
+      this.activeRoute = route.title;
+      this.routeChange.emit(this.activeRoute);
     }
   }
 

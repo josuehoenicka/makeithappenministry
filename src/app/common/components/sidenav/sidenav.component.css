@@ -2,7 +2,7 @@
 
 .sidenav {
   height: 100%;
-  width: 20vw;
+  width: 23vw;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -12,18 +12,18 @@
   padding-top: 20px;
 }
 
-/* logo-container */
+/* Logo Container */
 
 .logo-container {
   width: 100%;
-  padding: 2em 0;
+  padding: .5em 0 2em 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .sidenav-logo {
-  width: 7em;
+  width: 8em;
 }
 
 /* ng-template sidenavRoutes */
@@ -70,13 +70,5 @@ button {
   top: 20px;
   left: 17vw;
   z-index: 1000;
-}
-
-.toggle-button mat-icon {
-  font-size: 2.5em;
-}
-
-.sidenav-hidden {
-  display: none;
 }
 
