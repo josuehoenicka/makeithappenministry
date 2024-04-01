@@ -12,7 +12,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --bg: #feeeee;
+  --white: #feeeee;
   --bg_dark: #2f2f2f;
   --letter: #fefefe;
   --letter_dark: #2f2f2f;
@@ -21,7 +21,8 @@
   --green: #09843c;
   --yellow: #ffe970;
   --orange: #ffba61;
-  --blue: #0752fe;
+  --blue: #3058b8;
+  --blue_selected: #002781;
 }
 
 * {
@@ -29,7 +30,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Alumni Sans Pinstripe";
+  font-family: 'Poppins', monospace;
   text-decoration: none;
   user-select: none;
 }

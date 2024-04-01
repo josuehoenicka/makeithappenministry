@@ -37,17 +37,17 @@ export class SidenavComponent {
     },
     {
       title: 'Estudios',
-      children: ['Pastores', 'Jóvenes'],
+      children: ['Todos', 'Pastores', 'Jóvenes'],
       showContent: false,
     },
     {
-      title: 'Team',
-      children: ['Colaboradores', 'Iglesias', 'Equipo IT'],
+      title: 'Miembros',
+      children: ['Colaboradores', 'Iglesias', 'Sector IT'],
       showContent: false,
     },
     {
       title: 'Más información',
-      children: ['¿Quiénes somos?', 'FAQs', 'Contáctanos'],
+      children: ['Misión y visión', 'Contáctanos', 'FAQs'],
       showContent: false,
     },
   ];

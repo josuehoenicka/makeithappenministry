@@ -3,7 +3,9 @@
 </button>
 
 <div class="sidenav" [ngClass]="{ 'sidenav-hidden': sidenavHidden }">
-  <img src="../../../../assets/icons/mih.png" alt="" style="width: 6em;">
+  <div class="logo-container">
+    <img src="../../../../assets/icons/mih.png" alt="" class="sidenav-logo">
+  </div>
   <ng-container *ngFor="let route of sidenavRoutes; let i = index">
     <a
       *ngIf="!route.children"
