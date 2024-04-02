@@ -1,8 +1,14 @@
 <app-sidenav (routeChange)="onRouteChange($event)"></app-sidenav>
 
 <main>
+  <!-- Radio  -->
   <div *ngIf="this.currentView == 'Radio'">
     <app-radio></app-radio>
+  </div>
+
+  <!-- Juegos Bíblicos > Antiguo Testamento -->
+  <div *ngIf="this.currentView == 'Antiguo Testamento'">
+    <quizgame-old-testament></quizgame-old-testament>
   </div>
 </main>
 

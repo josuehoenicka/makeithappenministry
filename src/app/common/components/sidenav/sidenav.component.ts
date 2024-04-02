@@ -32,23 +32,28 @@ export class SidenavComponent {
       title: 'Radio',
     },
     {
-      title: 'Proyectos',
-      children: ['Dexcarriados Anonymous', 'Quiz MIH !'],
-      showContent: false,
-    },
-    {
       title: 'Estudios',
-      children: ['Todos', 'Pastores', 'Jóvenes'],
+      children: ['Pastores', 'Jóvenes'],
       showContent: false,
     },
     {
-      title: 'Miembros',
-      children: ['Colaboradores', 'Iglesias', 'Sector IT'],
+      title: 'Proyectos',
+      children: ['Dexcarriados Anonymous'],
+      showContent: false,
+    },
+    {
+      title: 'Quiz Bíblicos',
+      children: ['Antiguo Testamento'],
+      showContent: false,
+    },
+    {
+      title: 'Nuestro equipo',
+      children: ['Miembros', 'Iglesias Asociadas', 'Sector Tecnológico'],
       showContent: false,
     },
     {
       title: 'Más información',
-      children: ['Misión y visión', 'Contáctanos', 'FAQs'],
+      children: ['FAQs', 'Contáctanos'],
       showContent: false,
     },
   ];

@@ -13,12 +13,11 @@
 
 :root {
   --white: #feeeee;
-  --bg_dark: #2f2f2f;
-  --letter: #fefefe;
-  --letter_dark: #2f2f2f;
-  --red: #f02a2a;
+  --black: #2f2f2f;
+  --gray: #b6b4b4;
+  --red: #fb5a5a;
   --purple: #a176bc;
-  --green: #09843c;
+  --green: #45f38e;
   --yellow: #ffe970;
   --orange: #ffba61;
   --blue: #0b3aa7;
